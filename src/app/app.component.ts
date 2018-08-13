@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RR-FRONT';
+  source;
+
+  log(textarea) {
+    console.log(textarea);
+  }
 }
