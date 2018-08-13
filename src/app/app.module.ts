@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BbcodeEditorComponent } from './bbcode-editor/bbcode-editor.component';
+import { BbcodeFormaterDirective } from './bbcode-formater.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BbcodeEditorComponent
+    BbcodeEditorComponent,
+    BbcodeFormaterDirective
   ],
   imports: [
     BrowserModule,

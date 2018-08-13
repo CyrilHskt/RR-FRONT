@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BbcodeEditorComponent {
 
-  source;
+  source = "J'aime les <strong>chips</strong> au sel !"; 
 
   log(textarea) {
     console.log(textarea);

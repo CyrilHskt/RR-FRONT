@@ -1,20 +1,15 @@
-<!-- Page Content -->
-<div class="container">
-  <div class="form-group">
-      <label for="wysiwyg"></label>
-      <textarea rows="3" class="form-control" id="wysiwyg" #textarea ngModel [(ngModel)]="source">
-      </textarea>
-      <button (click)="log(textarea)">Test</button>
-  </div>
-  <div>
-      <div>
-          Source :
-          <div> {{ source }}</div>
-      </div>
-      <!-- <div>
-          Modified :
-          <div>{{ modified }}</div>
-      </div> -->
-  </div>
+
+<div style="height: 150px;"
+ id="wysiwyg" 
+ contenteditable="true"
+ [(innerHTML)]="source" 
+ #yo
+
+ appBbcodeFormater></div>
+
+<button (click)="log(yo)">Test</button>
+
+<div>
+    Source :
+    <div> {{ source }}</div>
 </div>
-<!-- /.container -->
