@@ -23,9 +23,14 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/sceditor/minified/themes/default.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/sceditor/minified/sceditor.min.js",
+              "src/assets/sceditor/minified/formats/bbcode.js",
+              "src/assets/scripts/main.js" 
+            ]
           },
           "configurations": {
             "production": {

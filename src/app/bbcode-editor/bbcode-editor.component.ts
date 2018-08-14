@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'bbcode-editor',
@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BbcodeEditorComponent {
 
-  source = "J'aime les <strong>chips</strong> au sel !"; 
+  // source = "J'aime les <strong>chips</strong> au sel !"; 
 
-  log(textarea) {
-    console.log(textarea);
+  // log(textarea) {
+  //   console.log(textarea);
+  // }
+
+  refresh(textarea){
+    // console.log('refresh', textarea);
+    console.log('contenu', textarea.value);
+        
   }
-
 }
